@@ -20,7 +20,7 @@ iv) [Log Loss Benchmark](https://github.com/gjwls/ESST-eval/blob/main/eval/log_l
 
 ## Test Results
 
-#### Microbenchmark - Process
+### Microbenchmark - Process
 
 without policy:
 
@@ -52,7 +52,7 @@ with policy:
 | #9   | 5.748165138 | 5.404906642 | 5.460263513 | 6.827484696 |
 | #10  | 5.71680199  | 5.447916813 | 5.455044716 | 6.803393761 |
 
-#### Microbenchmark - Network
+### Microbenchmark - Network
 
 without policy:
 
@@ -84,7 +84,7 @@ with policy:
 | #9   | 1476760079 | 1577179906 | 1053440978 | 1486243649 |
 | #10  | 1400373072 | 1587914474 | 996458747  | 1362776223 |
 
-####  Policy Enforcement Benchmark
+###  Policy Enforcement Benchmark
 
 | ESST | KubeArmor  | Tetragon   | Falco      | Tracee     |
 | ---- | ---------- | ---------- | ---------- | ---------- |
@@ -99,7 +99,7 @@ with policy:
 | #9   | 0.54287068 | 4.88813695 | 19.8582698 | 11.3218037 |
 | #10  | 0.49941367 | 4.38228932 | 18.345009  | 11.4469633 |
 
-#### Log Loss Benchmark
+### Log Loss Benchmark
 
 | Throughput | 9.8  | 19.3 | 49.01 | 96.42 | 193.42 | 486.85 | 968.05 | 1874.41 | 2480.15 |
 | ---------- | ---- | ---- | ----- | ----- | ------ | ------ | ------ | ------- | ------- |
