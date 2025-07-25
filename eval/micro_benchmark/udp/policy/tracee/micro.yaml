@@ -1,0 +1,11 @@
+apiVersion: tracee.aquasec.com/v1beta1
+kind: Policy
+metadata:
+    name: sample
+spec:
+    scope:
+      - global
+    rules:
+      - event: sendto
+        filters:
+        - podName=ubuntu

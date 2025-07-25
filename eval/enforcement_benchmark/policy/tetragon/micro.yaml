@@ -1,0 +1,27 @@
+apiVersion: cilium.io/v1alpha1
+kind: TracingPolicy
+metadata:
+  name: "enforce-test-v2"
+spec:
+  podSelector:
+    matchLabels:
+      app: ubuntu
+  kprobes:
+  - call: "security_bprm_check"
+    syscall: false
+    return: true
+    args:
+    - index: 0
+      type: "linux_binprm"
+    returnArg:
+      index: 1
+      type: "int"
+    # returnArgAction: "Post"
+    selectors:
+    - matchArgs:
+      - index: 0
+        operator: "Prefix"
+        values:
+        - "/usr/bin/ls"
+    - matchActions:
+      - action: Post

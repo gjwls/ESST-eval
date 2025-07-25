@@ -1,0 +1,9 @@
+customRules:
+  custom-rules.yaml: |-
+    - rule: Execute apt program
+      desc: Detect execution of apt program
+      condition: >
+        (k8s.pod.name = "ubuntu") and (container.id != host) and (evt.type=execve) and (proc.exe = "/usr/bin/ls")
+      output: "(proc_exepath=%proc.exepath cmdline=%proc.cmdline container_id=%container.id container_name=%container.name)"
+      priority: WARNING
+      tags: [execve]

@@ -1,0 +1,11 @@
+apiVersion: cilium.io/v1alpha1
+kind: TracingPolicy
+metadata:
+  name: audit-dns
+spec:
+  kprobes:
+  - call: "sys_sendto"
+    syscall: true
+    selectors:
+    - matchActions:
+      - action: Post

@@ -1,0 +1,12 @@
+apiVersion: security.kubearmor.com/v1
+kind: KubeArmorPolicy
+metadata:
+  name: "file-monitoring"
+spec:
+  selector:
+    matchLabels:
+      app: ubuntu
+  process:
+    matchPaths:
+    - path: "/usr/bin/ls"
+  action: Audit

@@ -1,0 +1,15 @@
+apiVersion: security.kubearmor.com/v1
+kind: KubeArmorPolicy
+metadata:
+  name: audit-dns-traffic
+  namespace: default
+spec:
+  message: "DNS request detected"
+  severity: 5
+  selector:
+    matchLabels:
+      app: ubuntu
+  network:
+    matchProtocols:
+      - protocol: UDP
+  action: Audit

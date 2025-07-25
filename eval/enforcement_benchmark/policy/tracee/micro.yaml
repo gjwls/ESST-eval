@@ -1,0 +1,12 @@
+apiVersion: tracee.aquasec.com/v1beta1
+kind: Policy
+metadata:
+    name: enforce-test-v5
+spec:
+    scope:
+      - global
+    rules:
+      - event: execve
+        filters:
+        - podName=ubuntu
+        - args.pathname=/usr/bin/ls

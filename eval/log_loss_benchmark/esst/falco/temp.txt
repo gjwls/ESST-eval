@@ -1,0 +1,17 @@
+Wed Mar 12 10:14:51 2025: Falco version: 0.40.0 (x86_64)
+Wed Mar 12 10:14:51 2025: Falco initialized with configuration files:
+Wed Mar 12 10:14:51 2025:    /etc/falco/config.d/engine-kind-falcoctl.yaml | schema validation: ok
+Wed Mar 12 10:14:51 2025:    /etc/falco/falco.yaml | schema validation: ok
+Wed Mar 12 10:14:51 2025: System info: Linux version 5.15.0-133-generic (buildd@lcy02-amd64-040) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #144-Ubuntu SMP Fri Feb 7 20:47:38 UTC 2025
+Wed Mar 12 10:14:51 2025: Loading rules from:
+Wed Mar 12 10:14:51 2025:    /etc/falco/falco_rules.yaml | schema validation: ok
+Wed Mar 12 10:14:51 2025:    /etc/falco/rules.d/custom-rules.yaml | schema validation: ok
+Wed Mar 12 10:14:51 2025: Hostname value has been overridden via environment variable to: master
+Wed Mar 12 10:14:51 2025: The chosen syscall buffer dimension is: 8388608 bytes (8 MBs)
+Wed Mar 12 10:14:51 2025: Starting health webserver with threadiness 4, listening on 0.0.0.0:8765
+Wed Mar 12 10:14:51 2025: Loaded event sources: syscall
+Wed Mar 12 10:14:51 2025: Enabled event sources: syscall
+Wed Mar 12 10:14:51 2025: Opening 'syscall' source with modern BPF probe.
+Wed Mar 12 10:14:51 2025: One ring buffer every '2' CPUs.
+10:42:46.545015264: Critical Executing binary not part of base image (proc_exe=/eval_ls proc_sname= gparent=containerd-shim proc_exe_ino_ctime=1741769974784764100 proc_exe_ino_mtime=1741769974784764100 proc_exe_ino_ctime_duration_proc_start=6191754835516 proc_cwd=/ container_start_ts=1741693558418587270 evt_type=execve user=root user_uid=0 user_loginuid=-1 process=eval_ls proc_exepath=/eval_ls parent=runc command=eval_ls 100000 100 terminal=0 exe_flags=EXE_WRITABLE|EXE_UPPER_LAYER container_id=f73daf0d124f container_image=docker.io/library/ubuntu container_image_tag=latest container_name=ubuntu k8s_ns=default k8s_pod_name=ubuntu)
+10:42:46.647656991: Warning (proc_exepath=/usr/bin/ls cmdline=ls container_id=f73daf0d124f container_name=ubuntu) container_id=f73daf0d124f container_image=docker.io/library/ubuntu container_image_tag=latest container_name=ubuntu k8s_ns=default k8s_pod_name=ubuntu

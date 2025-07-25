@@ -1,0 +1,8 @@
+customRules:
+  custom-rules.yaml: |-
+    - rule: Detect DNS Traffic
+      desc: Detects UDP traffic to port 53 (DNS)
+      condition: evt.type = sendto and fd.l4proto = udp
+      output: "DNS request detected (command=%proc.cmdline pid=%proc.pid destination=%fd.name)"
+      priority: NOTICE
+      tags: [network, audit]
