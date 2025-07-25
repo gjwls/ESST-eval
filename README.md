@@ -22,7 +22,7 @@ iv) [Log Loss Benchmark](https://github.com/gjwls/ESST-eval/blob/main/eval/log_l
 
 #### Microbenchmark - Process
 
-**without policy:**
+without policy:
 
 | ESST | Default    | KubeArmor  | Tetragon   | Falco      | Tracee     |
 | ---- | ---------- | ---------- | ---------- | ---------- | ---------- |
@@ -37,7 +37,7 @@ iv) [Log Loss Benchmark](https://github.com/gjwls/ESST-eval/blob/main/eval/log_l
 | #9   | 4.92011812 | 5.85158206 | 5.2588743  | 5.37134664 | 5.46026351 |
 | #10  | 4.89535763 | 5.81645298 | 5.26701554 | 5.36487302 | 5.45504472 |
 
-**with policy:**
+with policy:
 
 | ESST | KubeArmor   | Tetragon    | Falco       | Tracee      |
 | ---- | ----------- | ----------- | ----------- | ----------- |
@@ -54,7 +54,7 @@ iv) [Log Loss Benchmark](https://github.com/gjwls/ESST-eval/blob/main/eval/log_l
 
 #### Microbenchmark - Network
 
-**without policy:**
+without policy:
 
 | ESST | Default   | Tetragon  | KubeArmor  | Falco      | Tracee    |
 | ---- | --------- | --------- | ---------- | ---------- | --------- |
@@ -69,7 +69,7 @@ iv) [Log Loss Benchmark](https://github.com/gjwls/ESST-eval/blob/main/eval/log_l
 | #9   | 809158617 | 813617686 | 1532497655 | 975673495  | 898661617 |
 | #10  | 841977078 | 845333590 | 1529342227 | 1016028050 | 844705609 |
 
-**with policy:**
+with policy:
 
 | ESST | Tetragon   | KubeArmor  | Falco      | Tracee     |
 | ---- | ---------- | ---------- | ---------- | ---------- |
